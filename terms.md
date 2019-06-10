@@ -15,3 +15,6 @@ pearson correlation coefficient
 correlation not necessarily cause-effect
 
 homoscedasticity: data that are spreaded out to the same extent. check scatter plots or check the variances of 2 or more samples
+
+
+https://drive.google.com/file/d/11sfjE0duVBZsuwNvcuEK5E49M7pn0ELk/view?usp=sharing
