@@ -20,6 +20,6 @@ regression toward the mean: tendency for scores, particularly extreme scores to 
 
 
 <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.lstsq.html">Logistic Regression
-</a>
+</a>: y = mx + c
 
 https://drive.google.com/file/d/11sfjE0duVBZsuwNvcuEK5E49M7pn0ELk/view?usp=sharing
