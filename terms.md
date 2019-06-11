@@ -19,4 +19,7 @@ homoscedasticity: data that are spreaded out to the same extent. check scatter p
 regression toward the mean: tendency for scores, particularly extreme scores to shrink toward the mean
 
 
+<a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.lstsq.html">Logistic Regression
+</a>
+
 https://drive.google.com/file/d/11sfjE0duVBZsuwNvcuEK5E49M7pn0ELk/view?usp=sharing
