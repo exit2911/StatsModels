@@ -12,6 +12,7 @@ Kurtosis quantifies how much of the distribution is in the tail. It is a simple 
 """
 
 
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -40,6 +41,8 @@ x = np.array(x)
 #checking for normality with histogram
 
 plt.hist(x)
+plt.ylabel('Count')
+plt.xlabel('Height (inches)')
 
 stat, p = normaltest(x)
 print('Statistics = %.3f, p = %.3f' % (stat, p))
