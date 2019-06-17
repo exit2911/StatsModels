@@ -22,18 +22,6 @@ df = pd.read_csv(r'/Users/VyHo/Downloads/scores.csv', sep = ',')
 
 df.head()
 
-"""
-
-#convert columns data to numpy array data
-
-x = [] #independent variable is study hour
-
-for i in df['Height']:
-    x.append(i)
-    
-x = np.array(x)
-
-"""
 
 total_scores = df['Average Score (SAT Math)'] + df['Average Score (SAT Reading)'] + df['Average Score (SAT Writing)']
 
