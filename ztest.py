@@ -7,7 +7,7 @@ http://money.com/money/4017881/average-sat-scores-2015/
 attempted to compare NYC average SAT scores to the nation average, but the averages don't follow a normal distribution
 """
 
-
+import math as m
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -156,4 +156,17 @@ maleHeight = df['Height']* 2.54
 maleHeight.describe()
 
 
-#research question: does the mean of general male population height differs from olympic male athlete height?
+#research question: does the mean of general male population height differs from average olympic male athlete height (178.858463)?
+'''
+null hypothesis: mean = 168.57
+alternative hypothesis: mean != 168.57
+
+Rejecting null hypothesis at the 0.05 level of significance if z >= 1.96 or if z < = -1.96
+
+'''
+Z = (168.573602 - 178.858463)/(9.360318/m.sqrt(143567))
+
+#reducing sample sizes since Z result in unreadable
+
+
+
