@@ -148,15 +148,25 @@ height.describe()
 
 df = pd.read_csv(r'/Users/VyHo/Downloads/weight-height.csv', sep = ',')
 
-df.head()
+df.head() #currently have both female and male heights. want to drop female heights
 
-
+df = df[(df['Gender'] != 'Female')]
 maleHeight = df['Height']* 2.54
 
+#final male height dataframe
+
+maleHeight = maleHeight.head(100) 
+
+
+#final athlete height dataframe
+
+height = height.head(100)
+print('athlete heights')
+height.describe()
+print('general male pop')
 maleHeight.describe()
-
-
 #research question: does the mean of general male population height differs from average olympic male athlete height (178.858463)?
+
 '''
 null hypothesis: mean = 168.57
 alternative hypothesis: mean != 168.57
@@ -164,9 +174,10 @@ alternative hypothesis: mean != 168.57
 Rejecting null hypothesis at the 0.05 level of significance if z >= 1.96 or if z < = -1.96
 
 '''
-Z = (168.573602 - 178.858463)/(9.360318/m.sqrt(143567))
 
-#reducing sample sizes since Z result in unreadable
+hypoMean = 175.388972
+sampleMean = 180.440000
+sampleStandardDev = 7.506657
 
-
-
+Z = (sampleMean - hypoMean)/(sampleStandardDev/m.sqrt(100))
+#z is larger than 1.96, hence reject null hypo
