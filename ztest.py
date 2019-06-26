@@ -132,18 +132,6 @@ plt.xlabel('Height cm')
 plt.show()
 
 
-x = height
-
-stat, p = normaltest(x)
-print('Statistics = %.3f, p = %.3f' % (stat, p))
-
-alpha = .05
-
-if p > alpha:
-    print('Sample looks Gaussian')
-else:
-    print('Sample doesn\'t look Gaussian')
-    
 height.describe()
 
 df = pd.read_csv(r'/Users/VyHo/Downloads/weight-height.csv', sep = ',')
@@ -162,6 +150,19 @@ maleHeight = maleHeight.head(100)
 
 height = height.head(100)
 print('athlete heights')
+
+x = height
+
+stat, p = normaltest(x)
+print('Statistics = %.3f, p = %.3f' % (stat, p))
+
+alpha = .05
+
+if p > alpha:
+    print('Sample looks Gaussian')
+else:
+    print('Sample doesn\'t look Gaussian')
+
 height.describe()
 print('general male pop')
 maleHeight.describe()
@@ -181,3 +182,7 @@ sampleStandardDev = 7.506657
 
 Z = (sampleMean - hypoMean)/(sampleStandardDev/m.sqrt(100))
 #z is larger than 1.96, hence reject null hypo
+
+a= [40,44,46,41,43,44]
+b = pd.DataFrame(np.array(a).reshape(6,1), columns = list("a"))
+
