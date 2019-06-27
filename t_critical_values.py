@@ -19,7 +19,7 @@ from scipy import stats
 
 print(stats.t.ppf(1-0.025, 999))
 
-#Studnt critical value, n=6, p<0.05%, Single tail
+#Studnt critical value, n=6, p<0.01%, Single tail
 #df = 5
 
 print(stats.t.ppf(1-0.01, 5))
