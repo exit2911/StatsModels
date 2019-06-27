@@ -9,7 +9,7 @@ use t test when sample size is less than 30
 
 standard deviation is unknown
 
-(sampleMean - hypoMean)/(sampleStandardDev/m.sqrt(100))
+(sampleMean - hypoMean)/(sampleStandardDev/m.sqrt(n))
 
 t critical value determined by df= n -1 
 
