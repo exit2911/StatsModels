@@ -17,7 +17,7 @@ t critical value determined by df= n -1
 
 
 from scipy import stats
-#Studnt, df=999, p<0.05, 2-tail
+#Studnt, df=999, p<0.05, 2-tailed
 
 print(stats.t.ppf(1-0.025, 999))
 
