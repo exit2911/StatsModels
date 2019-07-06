@@ -9,16 +9,10 @@ import scipy.stats as stats
 
 crit = stats.chi2.ppf(q = 0.95, df = 3)
 
-
-
-
 df = pd.read_csv('/Users/vyho/Documents/bloodtype.csv', sep = ',')
 
 df.head()
 df = df.dropna()
-
-
-
 
 chi = stats.chisquare(f_obs= df['observed'],   # Array of observed counts
                 f_exp= df['expected']) 
