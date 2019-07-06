@@ -1,4 +1,8 @@
+'''
 
+does the distribution of college student blood types comply with that described in U.S. blood bank bulletin?
+
+'''
 
 import numpy as np
 import pandas as pd
