@@ -11,6 +11,9 @@ result (first element in tuple)
 
 df = (number of row - 1)(number of column - 1) 
 
+the below test uses data from a postal service office. testing whether the neighborhoods are independent of lost letter return rates.
+
+found chi square is greater than ciritcal value. neighborhoods are not independent of lost letter return rate
 '''
 
 
